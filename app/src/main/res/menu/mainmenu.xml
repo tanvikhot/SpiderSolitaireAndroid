@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_restart"
+        android:icon="@drawable/restart_button"
+        android:title="@string/restart"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/undo_arrow"
+        android:title="@string/undo"
+        app:showAsAction="ifRoom"
+        android:enabled="false"></item>
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/save_game"
+        android:icon="@drawable/console"
+        android:title="@string/save"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/load_game"
+        android:icon="@drawable/console"
+        android:title="@string/load"
+        app:showAsAction="never">
+    </item>
+
+</menu>

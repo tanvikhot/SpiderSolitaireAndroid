@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stack01"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/stack02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorPrimaryDark"
+        tools:text="Stack 1" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton1"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack02"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack01"-->
+    <!--tools:text="@string/move" />-->
+
+
+    <TextView
+        android:id="@+id/stack02"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/stack03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stack01"
+        tools:text="Stack 2" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton2"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack03"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/stack01"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack02"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/stack03"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stack04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack02"
+        tools:text="Stack 3" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton3"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack04"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/stack02"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack03"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/stack04"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stack05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack03"
+        tools:text="Stack 4" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton4"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack05"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/stack03"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack04"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/stack05"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stack06"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack04"
+        tools:text="Stack 5" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton5"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack06"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/stack04"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack05"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/stack06"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stack07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack05"
+        tools:text="Stack 6" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton6"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/stack07"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/stack05"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack06"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/stack07"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/drawpile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack06"
+        tools:text="Stack 7" />
+
+    <!--<Button-->
+    <!--android:id="@+id/movebutton7"-->
+    <!--style="@style/Widget.AppCompat.Button"-->
+    <!--android:layout_width="65dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="move"-->
+    <!--android:text="@string/move"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/drawpile"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/stack06"-->
+    <!--app:layout_constraintEnd_toStartOf="@id/stack07"-->
+    <!--tools:text="@string/move" />-->
+
+    <TextView
+        android:id="@+id/drawpile"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="8sp"
+        android:maxLines="1"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stack07"
+        tools:text="Draw Pile" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/clearbuttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawpile">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="draw"
+            android:text="@string/draw"
+            tools:text="Draw" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clear"
+            android:text="@string/clear"
+            tools:text="Clear" />
+
+        <Button
+            android:id="@+id/gridview"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="gridView"
+            android:text="Grid"
+            tools:text="Grid" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clearbuttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/otherbuttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons">
+
+        <Button
+            android:id="@+id/clearbutton1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="1"
+            tools:text="1" />
+
+        <Button
+            android:id="@+id/clearbutton2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="2"
+            tools:text="2" />
+
+        <Button
+            android:id="@+id/clearbutton3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="3"
+            tools:text="3" />
+
+        <Button
+            android:id="@+id/clearbutton4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="4"
+            tools:text="4" />
+
+        <Button
+            android:id="@+id/clearbutton5"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="5"
+            tools:text="5" />
+
+        <Button
+            android:id="@+id/clearbutton6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="6"
+            tools:text="6" />
+
+        <Button
+            android:id="@+id/clearbutton7"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearWhat"
+            android:text="7"
+            tools:text="7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearbuttons">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="restart"
+            android:text="@string/restart"
+            tools:text="Restart" />
+
+
+
+        <Button
+            android:id="@+id/savebutton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="gridView"
+            android:text="Save"
+            tools:text="Save" />
+
+        <Button
+            android:id="@+id/loadbutton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="gridView"
+            android:text="Load"
+            tools:text="Load" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
